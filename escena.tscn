@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bwsxw2nv3wocu"]
 
-[ext_resource type="Script" path="res://mesh_instance_3d.gd" id="1_u2vqq"]
+[ext_resource type="Script" uid="uid://lcxuoexud0er" path="res://mesh_instance_3d.gd" id="1_u2vqq"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fc0hj"]
 
@@ -17,5 +17,5 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 
 current = true
 fov = 80.0
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
