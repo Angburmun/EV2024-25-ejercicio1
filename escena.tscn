@@ -1,24 +1,21 @@
-<<<<<<< HEAD
-[gd_scene load_steps=3 format=3 uid="uid://bwsxw2nv3wocu"]
+[gd_scene load_steps=3 format=3 uid="uid://uig00mjd3pub"]
 
-[ext_resource type="Script" uid="uid://lcxuoexud0er" path="res://mesh_instance_3d.gd" id="1_u2vqq"]
+[ext_resource type="Script" uid="uid://pwhvv42kf07a" path="res://mesh_instance_3d.gd" id="1_u2vqq"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fc0hj"]
-=======
-[gd_scene format=3 uid="uid://bwsxw2nv3wocu"]
->>>>>>> parent of 21bef94 (Ejercicio Teórico-Práctico)
 
 [node name="Escena" type="Node3D"]
 
-[node name="Node3D" type="Node3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_fc0hj")
+skeleton = NodePath("")
+script = ExtResource("1_u2vqq")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-<<<<<<< HEAD
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 0)
 current = true
 fov = 80.0
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
-=======
->>>>>>> parent of 21bef94 (Ejercicio Teórico-Práctico)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)

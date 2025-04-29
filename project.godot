@@ -11,10 +11,6 @@ config_version=5
 [application]
 
 config/name="angelburgos-entornos_virtuales"
-<<<<<<< HEAD
 run/main_scene="res://escena.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-=======
-config/features=PackedStringArray("4.3", "Forward Plus")
->>>>>>> parent of 21bef94 (Ejercicio Teórico-Práctico)
 config/icon="res://icon.svg"
